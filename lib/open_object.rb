@@ -1,19 +1,18 @@
-class EnhancedOpenObject
+class OpenObject
   def initialize(attributes = {}, hack_for_activeresource = false)
-    @inner_object = attributes
+    @inner_object = OpenStruct.new(attributes)
   end
 
   def method_missing(method, *args, &block)
-    method = method.to_s
-    if @inner_object.key?(method)
-      @inner_object[method]
+    if @inner_object.respond_to?(method)
+      @inner_object.send(method, *args, &block)
     else
       super(method)
     end
   end
 
   def respond_to?(method, include_private = false)
-    super || @inner_object.key?(method)
+    super || @inner_object.respond_to?(method, include_private)
   end
 
   def as_json(options=nil)
