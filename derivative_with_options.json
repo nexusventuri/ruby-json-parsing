@@ -1,0 +1,1161 @@
+{
+    "id": 78465,
+    "name": "1.6 TDI GT 3dr",
+    "engine_name": "1.6 TDI",
+    "cc": "1.6",
+    "bhp": 115,
+    "acceleration": "10.2",
+    "mpg_combined": "67.3",
+    "tax_rate": "140.0",
+    "price": "23405.0",
+    "full_name": "GOLF DIESEL HATCHBACK [2017 - ] - 1.6 TDI GT 3dr",
+    "fuel_long": "Diesel",
+    "fuel_long_simplified": "Diesel",
+    "transmission_long": "Manual",
+    "doors": 3,
+    "doors_simplified": "Front Only",
+    "basic_price_inc_vat": "22585.0",
+    "fees": "820.0",
+    "basic_price": "18820.83",
+    "best_price": 20919,
+    "vat": "3764.17",
+    "delivery_cost": "600.0",
+    "first_year_tax_rate": "165.0",
+    "simplified_name": "1.6 TDI GT",
+    "date_introduced": "2017-03-03",
+    "date_discontinued": null,
+    "co2_emissions": 109,
+    "top_speed": 123,
+    "kml_combined": null,
+    "efficiency_label": null,
+    "model_full_name": "Volkswagen Golf",
+    "model_slug": "Golf",
+    "make_slug": "Volkswagen",
+    "model_name": "Golf",
+    "make_name": "Volkswagen",
+    "on_the_market?": true,
+    "fuel": "Diesel",
+    "transmission": "Manual",
+    "discontinued?": false,
+    "discontinued_recently?": false,
+    "trim": {
+        "id": 2963,
+        "model_id": 1591,
+        "name": "GT",
+        "description": "GT models get sporty looks \u2013 but not quite as sporty as R-Line cars \u2013 and a helping of extra equipment compared to SE models. It's the one to go for if you want a really posh-feeling Golf.\r\n\r\nMore aggressive styling comes thanks to the car's 17-inch alloy wheels and sports suspension, while inside you get ambient lighting and sports seats. Otherwise you get the same kit as SE cars \u2013 so automatic cruise control and rain-sensing wipers \u2013 plus fully integrated sat-nav.",
+        "created_at": "2012-12-05T17:16:35.267Z",
+        "updated_at": "2018-04-03T14:20:21.463Z",
+        "tagline": "The luxury trim, for those who want it all",
+        "finance_details": ""
+    },
+    "cap_options": [
+        {
+            "code": 118097,
+            "description": "Lane assist with dynamic light assist and traffic sign recognition",
+            "price": "650.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 118096,
+            "description": "Lane assist + High beam assist and traffic sign recognition",
+            "price": "550.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117809,
+            "description": "Art velours cloth - Shetland",
+            "price": "0.0",
+            "category": "Trim",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117808,
+            "description": "Art velours cloth - Titan black/Quartz",
+            "price": "0.0",
+            "category": "Trim",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117792,
+            "description": "Discover DVD navigation pro with European map data, 64GB hard drive + voice control",
+            "price": "1325.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117664,
+            "description": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+            "price": "1900.0",
+            "category": "Trim",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117658,
+            "description": "18\" Jurva alloy wheels",
+            "price": "800.0",
+            "category": "Wheels",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117655,
+            "description": "17\" Dijon alloy wheel",
+            "price": null,
+            "category": "Wheels",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 117653,
+            "description": "Mobile phone interface - business",
+            "price": "425.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117648,
+            "description": "LED headlights with dynamic cornering lights",
+            "price": "1295.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117646,
+            "description": "3D-LED-SBBR with sweeping indicator",
+            "price": "325.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117644,
+            "description": "17\" Madrid blue alloy wheel",
+            "price": "500.0",
+            "category": "Wheels",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117616,
+            "description": "17\" Madrid alloy wheel",
+            "price": "350.0",
+            "category": "Wheels",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117615,
+            "description": "17\" Karlskoga alloy wheel",
+            "price": "350.0",
+            "category": "Wheels",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 115393,
+            "description": "Art velours cloth uphostery",
+            "price": null,
+            "category": "Interior Features",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 113659,
+            "description": "Active information display",
+            "price": "495.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 111150,
+            "description": "Manual swivelling towbar with 13 pin socket",
+            "price": "695.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 108763,
+            "description": "Trailer assist steering with park assist",
+            "price": "850.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 104382,
+            "description": "Dynamic chassis control",
+            "price": "850.0",
+            "category": "Technical",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 104356,
+            "description": "Park assist system with steering assist",
+            "price": "600.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 100500,
+            "description": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+            "price": "1900.0",
+            "category": "Trim",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 99096,
+            "description": "Voice activation for audio and navigation",
+            "price": "200.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 99094,
+            "description": "Discover navigation + European map data",
+            "price": null,
+            "category": "Driver Convenience",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 95055,
+            "description": "Vienna leather - Black + heated front sports seats with lumbar support",
+            "price": "1900.0",
+            "category": "Trim",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 95052,
+            "description": "Vienna leather upholstery + heated front sports seats with lumbar support",
+            "price": "1900.0",
+            "category": "Interior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 88218,
+            "description": "TFT display screen",
+            "price": null,
+            "category": "Driver Convenience",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 87501,
+            "description": "High beam assist",
+            "price": "150.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 85855,
+            "description": "Delete air conditioning",
+            "price": "0.0",
+            "category": "Interior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 84874,
+            "description": "Electric sliding panoramic glass sunroof",
+            "price": "995.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 83935,
+            "description": "LED Headlights",
+            "price": "995.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 67944,
+            "description": "Front sports seats",
+            "price": null,
+            "category": "Interior Features",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 64626,
+            "description": "Special solid paint",
+            "price": "285.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 64572,
+            "description": "Air conditioning - 2 zone electronic climate control",
+            "price": "425.0",
+            "category": "Interior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 55888,
+            "description": "Climate control heated windscreen",
+            "price": "300.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 43763,
+            "description": "Rear view camera",
+            "price": "340.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 37191,
+            "description": "Multi function display colour screen",
+            "price": "140.0",
+            "category": "Driver Convenience",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 14752,
+            "description": "Solid paint",
+            "price": null,
+            "category": "Exterior Features",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 14678,
+            "description": "Heated steering wheel",
+            "price": "160.0",
+            "category": "Interior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 12003,
+            "description": "Front cupholders x 2",
+            "price": null,
+            "category": "Interior Features",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 1977,
+            "description": "Premium paint",
+            "price": "995.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 1924,
+            "description": "Pearlescent paint",
+            "price": "575.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 1753,
+            "description": "Manual air conditioning",
+            "price": null,
+            "category": "Interior Features",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 1080,
+            "description": "Driver + front passenger lumbar support",
+            "price": null,
+            "category": "Interior Features",
+            "is_default_option": true,
+            "included_options": []
+        },
+        {
+            "code": 961,
+            "description": "Metallic paint",
+            "price": "575.0",
+            "category": "Exterior Features",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 27336,
+            "description": "Metallic - Reflex silver",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 54645,
+            "description": "Metallic - Atlantic blue",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 69465,
+            "description": "Pearl - Deep black",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 71081,
+            "description": "Metallic - Indium grey",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 83377,
+            "description": "Metallic - White silver",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 92805,
+            "description": "Solid - Urano grey",
+            "price": "0.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 95049,
+            "description": "Metallic - Tungsten silver",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 96002,
+            "description": "Special solid - Pure white",
+            "price": "285.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 97192,
+            "description": "Premium paint - Oryx White",
+            "price": "995.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 99520,
+            "description": "Special solid - Tornado red",
+            "price": "285.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 117639,
+            "description": "Metallic - Turmeric Yellow",
+            "price": "575.0",
+            "category": "Paintwork",
+            "is_default_option": false,
+            "included_options": []
+        },
+        {
+            "code": 20191,
+            "description": "Winter pack - Golf",
+            "price": "400.0",
+            "category": "Packs",
+            "is_default_option": false,
+            "included_options": [
+                "Heated front seats",
+                "Heated windscreen washer jets",
+                "Low screen washer fluid warning",
+                "Headlight washers"
+            ]
+        },
+        {
+            "code": 66817,
+            "description": "Winter pack - Golf (when ordered with leather upholstery)",
+            "price": "320.0",
+            "category": "Packs",
+            "is_default_option": false,
+            "included_options": [
+                "Headlight wash system",
+                "Low washer fluid indicator",
+                "Heated windscreen washer jets"
+            ]
+        },
+        {
+            "code": 72575,
+            "description": "Smoking pack - Golf",
+            "price": "15.0",
+            "category": "Packs",
+            "is_default_option": false,
+            "included_options": [
+                "Cigar lighter",
+                "Removable ashtray"
+            ]
+        },
+        {
+            "code": 108853,
+            "description": "Dynaudio excite sound pack - Golf",
+            "price": "550.0",
+            "category": "Packs",
+            "is_default_option": false,
+            "included_options": [
+                "8 speakers",
+                "8 channel digital amplifier with 400w output"
+            ]
+        }
+    ],
+    "cap_options_rules": [
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 92805,
+                    "name": "Solid - Urano grey",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": false
+                },
+                {
+                    "id": 14752,
+                    "name": "Solid paint",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 99520,
+                    "name": "Special solid - Tornado red",
+                    "primary": false,
+                    "price": 285,
+                    "is_default_option": false
+                },
+                {
+                    "id": 96002,
+                    "name": "Special solid - Pure white",
+                    "primary": false,
+                    "price": 285,
+                    "is_default_option": false
+                },
+                {
+                    "id": 64626,
+                    "name": "Special solid paint",
+                    "primary": false,
+                    "price": 285,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117639,
+                    "name": "Metallic - Turmeric Yellow",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95049,
+                    "name": "Metallic - Tungsten silver",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 83377,
+                    "name": "Metallic - White silver",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 71081,
+                    "name": "Metallic - Indium grey",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 69465,
+                    "name": "Pearl - Deep black",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 54645,
+                    "name": "Metallic - Atlantic blue",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 27336,
+                    "name": "Metallic - Reflex silver",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 1924,
+                    "name": "Pearlescent paint",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 961,
+                    "name": "Metallic paint",
+                    "primary": false,
+                    "price": 575,
+                    "is_default_option": false
+                },
+                {
+                    "id": 97192,
+                    "name": "Premium paint - Oryx White",
+                    "primary": false,
+                    "price": 995,
+                    "is_default_option": false
+                },
+                {
+                    "id": 1977,
+                    "name": "Premium paint",
+                    "primary": false,
+                    "price": 995,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 117809,
+                    "name": "Art velours cloth - Shetland",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117808,
+                    "name": "Art velours cloth - Titan black/Quartz",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": false
+                },
+                {
+                    "id": 115393,
+                    "name": "Art velours cloth uphostery",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 117664,
+                    "name": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 100500,
+                    "name": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95055,
+                    "name": "Vienna leather - Black + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95052,
+                    "name": "Vienna leather upholstery + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 117655,
+                    "name": "17\" Dijon alloy wheel",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 117616,
+                    "name": "17\" Madrid alloy wheel",
+                    "primary": false,
+                    "price": 350,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117615,
+                    "name": "17\" Karlskoga alloy wheel",
+                    "primary": false,
+                    "price": 350,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117644,
+                    "name": "17\" Madrid blue alloy wheel",
+                    "primary": false,
+                    "price": 500,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117658,
+                    "name": "18\" Jurva alloy wheels",
+                    "primary": false,
+                    "price": 800,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 85855,
+                    "name": "Delete air conditioning",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": false
+                },
+                {
+                    "id": 1753,
+                    "name": "Manual air conditioning",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 64572,
+                    "name": "Air conditioning - 2 zone electronic climate control",
+                    "primary": false,
+                    "price": 425,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 12003,
+                    "name": "Front cupholders x 2",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 72575,
+                    "name": "Smoking pack - Golf",
+                    "primary": false,
+                    "price": 15,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "RO",
+            "options": [
+                {
+                    "id": 66817,
+                    "name": "Winter pack - Golf (when ordered with leather upholstery)",
+                    "primary": true,
+                    "price": 320,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117664,
+                    "name": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 100500,
+                    "name": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95055,
+                    "name": "Vienna leather - Black + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95052,
+                    "name": "Vienna leather upholstery + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "IN",
+            "options": [
+                {
+                    "id": 99096,
+                    "name": "Voice activation for audio and navigation",
+                    "primary": false,
+                    "price": 200,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117792,
+                    "name": "Discover DVD navigation pro with European map data, 64GB hard drive + voice control",
+                    "primary": true,
+                    "price": 1325,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 99094,
+                    "name": "Discover navigation + European map data",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 117792,
+                    "name": "Discover DVD navigation pro with European map data, 64GB hard drive + voice control",
+                    "primary": false,
+                    "price": 1325,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "NW",
+            "options": [
+                {
+                    "id": 1080,
+                    "name": "Driver + front passenger lumbar support",
+                    "primary": true,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 117664,
+                    "name": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 100500,
+                    "name": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95055,
+                    "name": "Vienna leather - Black + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95052,
+                    "name": "Vienna leather upholstery + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "NW",
+            "options": [
+                {
+                    "id": 67944,
+                    "name": "Front sports seats",
+                    "primary": true,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 117664,
+                    "name": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 100500,
+                    "name": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95055,
+                    "name": "Vienna leather - Black + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95052,
+                    "name": "Vienna leather upholstery + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 83935,
+                    "name": "LED Headlights",
+                    "primary": false,
+                    "price": 995,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117648,
+                    "name": "LED headlights with dynamic cornering lights",
+                    "primary": false,
+                    "price": 1295,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "RO",
+            "options": [
+                {
+                    "id": 14678,
+                    "name": "Heated steering wheel",
+                    "primary": true,
+                    "price": 160,
+                    "is_default_option": false
+                },
+                {
+                    "id": 66817,
+                    "name": "Winter pack - Golf (when ordered with leather upholstery)",
+                    "primary": false,
+                    "price": 320,
+                    "is_default_option": false
+                },
+                {
+                    "id": 20191,
+                    "name": "Winter pack - Golf",
+                    "primary": false,
+                    "price": 400,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117664,
+                    "name": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 100500,
+                    "name": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95055,
+                    "name": "Vienna leather - Black + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95052,
+                    "name": "Vienna leather upholstery + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "OO",
+            "options": [
+                {
+                    "id": 88218,
+                    "name": "TFT display screen",
+                    "primary": false,
+                    "price": 0,
+                    "is_default_option": true
+                },
+                {
+                    "id": 37191,
+                    "name": "Multi function display colour screen",
+                    "primary": false,
+                    "price": 140,
+                    "is_default_option": false
+                },
+                {
+                    "id": 113659,
+                    "name": "Active information display",
+                    "primary": false,
+                    "price": 495,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "NW",
+            "options": [
+                {
+                    "id": 66817,
+                    "name": "Winter pack - Golf (when ordered with leather upholstery)",
+                    "primary": false,
+                    "price": 320,
+                    "is_default_option": false
+                },
+                {
+                    "id": 20191,
+                    "name": "Winter pack - Golf",
+                    "primary": true,
+                    "price": 400,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117664,
+                    "name": "Vienna leather - Pure Grey + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 100500,
+                    "name": "Vienna leather - Shetland beige + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95055,
+                    "name": "Vienna leather - Black + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                },
+                {
+                    "id": 95052,
+                    "name": "Vienna leather upholstery + heated front sports seats with lumbar support",
+                    "primary": false,
+                    "price": 1900,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "RA",
+            "options": [
+                {
+                    "id": 111150,
+                    "name": "Manual swivelling towbar with 13 pin socket",
+                    "primary": false,
+                    "price": 695,
+                    "is_default_option": false
+                },
+                {
+                    "id": 108763,
+                    "name": "Trailer assist steering with park assist",
+                    "primary": true,
+                    "price": 850,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "IN",
+            "options": [
+                {
+                    "id": 104356,
+                    "name": "Park assist system with steering assist",
+                    "primary": false,
+                    "price": 600,
+                    "is_default_option": false
+                },
+                {
+                    "id": 108763,
+                    "name": "Trailer assist steering with park assist",
+                    "primary": true,
+                    "price": 850,
+                    "is_default_option": false
+                }
+            ]
+        },
+        {
+            "rule_type": "RA",
+            "options": [
+                {
+                    "id": 117653,
+                    "name": "Mobile phone interface - business",
+                    "primary": true,
+                    "price": 425,
+                    "is_default_option": false
+                },
+                {
+                    "id": 117792,
+                    "name": "Discover DVD navigation pro with European map data, 64GB hard drive + voice control",
+                    "primary": false,
+                    "price": 1325,
+                    "is_default_option": false
+                }
+            ]
+        }
+    ],
+    "option_rule_expressions": [],
+    "cap_code": "VWGO16GT 3HDTM  6"
+}
