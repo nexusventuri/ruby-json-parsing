@@ -32,4 +32,11 @@ describe EnhancedOpenObject do
     expect(a.equal?(c)).to eq false
     expect(list.uniq.length).to eq 2
   end
+
+  it 'should allow hash access' do
+    object = described_class.new(name: 'David', 'surname' => 'Santoro')
+
+    expect(object[:name]).to eq('David')
+    expect(object[:surname]).to eq('Santoro')
+  end
 end

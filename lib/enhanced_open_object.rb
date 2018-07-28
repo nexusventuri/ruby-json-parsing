@@ -2,15 +2,8 @@
 
 class EnhancedOpenObject
   def initialize(attributes = {}, _hack_for_activeresource = false)
-    @inner_object = attributes.map { |k, v| [k.to_sym, v] }.to_h
-  end
-
-  def method_missing(method, *_args)
-    if @inner_object.key?(method)
-      @inner_object[method]
-    else
-      super(method)
-    end
+    @inner_object = {}
+    attributes.each { |k, v| @inner_object[k.to_sym] = v }
   end
 
   def new_enhanced_open_object_member!(name) # :nodoc:

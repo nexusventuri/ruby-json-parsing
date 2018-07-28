@@ -3,12 +3,12 @@
 module Bench
   class Access
     attr_reader :parsed, :access_per_iteration
-    def run(json_string, n, access_per_iteration:, hash_access:, hash_symbol_access:, creation:)
+    def run(json_string, n, access:, access_per_iteration:, hash_access:, hash_symbol_access:, creation:, tests:)
       puts '***************************************************'
       puts "*             Executing #{n} times".ljust(50) + '*'
       puts "*             Accessing #{access_per_iteration} times".ljust(50) + '*'
       puts '***************************************************'
-      puts "params: hash_access #{hash_access}, hash_symbol_access: #{hash_symbol_access}, creation: #{creation}"
+      puts "params: hash_access #{hash_access}, hash_symbol_access: #{hash_symbol_access}, creation: #{creation}, access: #{access}"
       @parsed = Oj.load(json_string)
       @struct = OpenStruct.new(parsed)
       @o_object = OpenObject.new(parsed)
@@ -16,24 +16,37 @@ module Bench
       @p_object = PromiseOpenObject.new { parsed }
       @access_per_iteration = access_per_iteration
 
-      puts ''
-      puts '## Ips'
-      puts ''
-      Benchmark.ips do |x|
-        run_reports(x, n, hash_access: hash_access, hash_symbol_access: hash_symbol_access, creation: creation)
-        x.compare!
+      if tests.include?('benchmark')
+        puts ''
+        puts '## Benchmark'
+        puts ''
+        Benchmark.bm do |x|
+          run_reports(x, n, access: access, hash_access: hash_access, hash_symbol_access: hash_symbol_access, creation: creation)
+        end
       end
 
-      puts ''
-      puts '## Memory'
-      puts ''
-      Benchmark.memory do |x|
-        run_reports(x, n, hash_access: hash_access, hash_symbol_access: hash_symbol_access, creation: creation)
-        x.compare!
+      if tests.include?('ips')
+        puts ''
+        puts '## Ips'
+        puts ''
+        Benchmark.ips do |x|
+          run_reports(x, n, access: access, hash_access: hash_access, hash_symbol_access: hash_symbol_access, creation: creation)
+          x.compare!
+        end
+      end
+
+      if tests.include?('memory')
+        puts ''
+        puts '## Memory'
+        puts ''
+        Benchmark.memory do |x|
+          run_reports(x, n, access: access, hash_access: hash_access, hash_symbol_access: hash_symbol_access, creation: creation)
+          x.compare!
+        end
       end
     end
 
-    def run_reports(x, n, hash_access:, hash_symbol_access:, creation:)
+    def run_reports(x, n, access:, hash_access:, hash_symbol_access:, creation:)
       x.report('Hash gets:') do
         n.times do |_y|
           access_per_iteration.times do
@@ -47,7 +60,7 @@ module Bench
           @struct = OpenStruct.new(parsed) if creation
 
           access_per_iteration.times do
-            access(@struct)
+            access(@struct) if access
             hash_access(@struct) if hash_access
             hash_symbol_access(@struct) if hash_symbol_access
           end
@@ -59,7 +72,7 @@ module Bench
           @o_object = OpenObject.new(parsed) if creation
 
           access_per_iteration.times do
-            access(@o_object)
+            access(@o_object) if access
             hash_access(@o_object) if hash_access
             hash_symbol_access(@o_object) if hash_symbol_access
           end
@@ -71,7 +84,7 @@ module Bench
           @e_object = EnhancedOpenObject.new(parsed) if creation
 
           access_per_iteration.times do
-            access(@e_object)
+            access(@e_object) if access
             hash_access(@e_object) if hash_access
             hash_symbol_access(@e_object) if hash_symbol_access
           end
@@ -86,7 +99,7 @@ module Bench
           end
 
           access_per_iteration.times do
-            access(@p_object)
+            access(@p_object) if access
             hash_access(@p_object) if hash_access
             hash_symbol_access(@p_object) if hash_symbol_access
           end

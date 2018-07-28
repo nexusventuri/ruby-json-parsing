@@ -10,11 +10,16 @@ class MyCLI < Thor
   option :creation, default: false, type: :boolean,
                     desc: 'Creates the object once for each iteration'
   option :hash_symbol_access, default: false, type: :boolean,
-                              desc: 'Access the object using the hash notation, passing a symbol e.g. [:id]'
+                              desc: 'Access the object using the hash notation, passing a symbol e.g. object[:id]'
   option :hash_access, default: false, type: :boolean,
-                       desc: 'Access the object using the hash notation, passing a string e.g. ["id"]'
+                       desc: 'Access the object using the hash notation, passing a string e.g. object["id"]'
+  option :access, default: true, type: :boolean,
+                  desc: 'Access the object using the object notation e.g. object.id'
   option :access_per_iteration, default: 5, type: :numeric,
                                 desc: 'Number of access for each iteration'
+  method_option :tests,
+                type: :array, enum: [:ips, :benchmark, :memory],
+                default: %w[ips memory]
   def exec(iterations)
     json_string = File.read('derivative_with_options.json')
     params = options.map { |k, v| [k.to_sym, v] }.to_h
