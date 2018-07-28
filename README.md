@@ -19,12 +19,12 @@ run `bundle exec benchmark help` to get more information about how to run the pr
 
 - How much memory is used, how fast the implementation, when the object is accessed?
 
-  `./benchmarks exec 1000 --access_per_iteration=1`
+  `./benchmark exec 1000 --access_per_iteration=1`
 
-  `./benchmarks exec 1000 --access_per_iteration=10`
+  `./benchmark exec 1000 --access_per_iteration=10`
 
 - How much memory is used when trying to access the object using hash notation?
 
-  `./benchmarks exec 1000 --hash_symbol_access -no-access --access_per_iteration=1`
+  `./benchmark exec 1000 --hash_symbol_access --no-access --access_per_iteration=1`
 
-  `./benchmarks exec 1000 --hash_symbol_access -no-access --access_per_iteration=10`
+  `./benchmark exec 1000 --hash_symbol_access --no-access --access_per_iteration=10`
