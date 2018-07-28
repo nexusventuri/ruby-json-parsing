@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 class EnhancedOpenObject
-  def initialize(attributes = {}, hack_for_activeresource = false)
+  def initialize(attributes = {}, _hack_for_activeresource = false)
     @inner_object = attributes.map { |k, v| [k.to_sym, v] }.to_h
   end
 
-  def method_missing(method, *args, &block)
+  def method_missing(method, *_args)
     if @inner_object.key?(method)
       @inner_object[method]
     else
@@ -15,17 +17,17 @@ class EnhancedOpenObject
     name = name.to_sym
     unless singleton_class.method_defined?(name)
       define_singleton_method(name) { @inner_object[name] }
-      define_singleton_method("#{name}=") {|x| name = x}
+      define_singleton_method("#{name}=") { |x| name = x }
     end
     name
   end
 
   def []=(key, val)
-    @inner_object[key.to_sym] = val
+    @inner_object[key] = val
   end
 
   def [](key)
-    @inner_object[key.to_sym]
+    @inner_object[key]
   end
 
   private :new_enhanced_open_object_member!
@@ -57,7 +59,7 @@ class EnhancedOpenObject
     super || @inner_object.key?(method)
   end
 
-  def as_json(options=nil)
+  def as_json(options = nil)
     @inner_object.send(:table).as_json(options)
   end
 
@@ -77,4 +79,3 @@ class EnhancedOpenObject
     @inner_object.hash
   end
 end
-

@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 module Bench
   class Parsing
-    def self.run(json_string, n)
-
+    def run(json_string, n)
+      puts '**************************************************'
       puts '*                    Parsing                     *'
       puts '**************************************************'
 
@@ -10,13 +12,13 @@ module Bench
       puts ''
       Benchmark.bm do |x|
         x.report('Parsing:') do
-          n.times do |y|
+          n.times do |_y|
             JSON.parse(json_string)
           end
         end
 
         x.report('Oj Parsing:') do
-          n.times do |y|
+          n.times do |_y|
             Oj.load(json_string)
           end
         end
@@ -28,13 +30,13 @@ module Bench
 
       Benchmark.ips do |x|
         x.report('Parsing:') do
-          n.times do |y|
+          n.times do |_y|
             JSON.parse(json_string)
           end
         end
 
         x.report('Oj Parsing:') do
-          n.times do |y|
+          n.times do |_y|
             Oj.load(json_string)
           end
         end
@@ -47,19 +49,18 @@ module Bench
 
       Benchmark.memory do |x|
         x.report('Parsing:') do
-          n.times do |y|
+          n.times do |_y|
             JSON.parse(json_string)
           end
         end
 
         x.report('Oj Parsing:') do
-          n.times do |y|
+          n.times do |_y|
             Oj.load(json_string)
           end
         end
         x.compare!
       end
-
     end
   end
 end

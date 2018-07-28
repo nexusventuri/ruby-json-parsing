@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require_relative '../spec_helper'
 
 describe EnhancedOpenObject do
-  it "should act as an openstruct" do
+  it 'should act as an openstruct' do
     object = described_class.new(name: 'David', surname: 'Santoro')
 
     expect(object.name).to eq 'David'
@@ -9,15 +11,15 @@ describe EnhancedOpenObject do
   end
 
   it "should raise an error when accessing a field that doesn't exist" do
-    object = described_class.new({name: 'David', surname: 'Santoro'})
+    object = described_class.new(name: 'David', surname: 'Santoro')
 
     expect { object.age }.to raise_error(NoMethodError)
   end
 
-  it "should implement equality operators correctly" do
-    a = described_class.new({name: 'Joe', age: 13})
-    b = described_class.new({name: 'Joe', age: 13})
-    c = described_class.new({name: 'Mike', age: 13})
+  it 'should implement equality operators correctly' do
+    a = described_class.new(name: 'Joe', age: 13)
+    b = described_class.new(name: 'Joe', age: 13)
+    c = described_class.new(name: 'Mike', age: 13)
 
     list = [a, b, c]
 

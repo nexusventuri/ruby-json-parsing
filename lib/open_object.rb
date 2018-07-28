@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class OpenObject
-  def initialize(attributes = {}, hack_for_activeresource = false)
+  def initialize(attributes = {}, _hack_for_activeresource = false)
     @inner_object = OpenStruct.new(attributes)
   end
 
@@ -15,7 +17,7 @@ class OpenObject
     super || @inner_object.respond_to?(method, include_private)
   end
 
-  def as_json(options=nil)
+  def as_json(options = nil)
     @inner_object.send(:table).as_json(options)
   end
 
@@ -35,4 +37,3 @@ class OpenObject
     @inner_object.hash
   end
 end
-

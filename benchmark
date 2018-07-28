@@ -1,0 +1,34 @@
+#! /usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative 'lib/requires'
+require 'thor'
+
+class MyCLI < Thor
+  desc 'exec ITERATIONS',
+       'runs the tests ITERATIONS times'
+  option :creation, default: false, type: :boolean,
+                    desc: 'Creates the object once for each iteration'
+  option :hash_symbol_access, default: false, type: :boolean,
+                              desc: 'Access the object using the hash notation, passing a symbol e.g. [:id]'
+  option :hash_access, default: false, type: :boolean,
+                       desc: 'Access the object using the hash notation, passing a string e.g. ["id"]'
+  option :access_per_iteration, default: 5, type: :numeric,
+                                desc: 'Number of access for each iteration'
+  def exec(iterations)
+    json_string = File.read('derivative_with_options.json')
+    params = options.map { |k, v| [k.to_sym, v] }.to_h
+
+    Bench::Access.new.run(json_string, iterations.to_i, **params)
+  end
+
+  desc 'parsing ITERATIONS',
+       'runs the parsing test ITERATIONS times'
+  def parsing(iterations)
+    json_string = File.read('derivative_with_options.json')
+
+    Bench::Parsing.new.run(json_string, iterations.to_i)
+  end
+end
+
+MyCLI.start(ARGV)
