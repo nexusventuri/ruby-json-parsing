@@ -29,6 +29,8 @@ class PromiseOpenObject
       if promise_inner_object.key?(mid)
         new_promise_open_object_member!(mid)
         @inner_object[mid]
+      else
+        raise NoMethodError
       end
     else
       begin
