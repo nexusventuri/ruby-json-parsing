@@ -8,17 +8,17 @@ module Bench
       puts ''
       puts '## Benchmark'
       puts ''
-      Benchmark.bm do |x|
-        run_tests(json_string, n, x)
-      end
+      #Benchmark.bm do |x|
+      #  run_tests(json_string, n, x)
+      #end
 
       puts ''
       puts '## Ips'
       puts ''
-      Benchmark.ips do |x|
-        run_tests(json_string, n, x)
-        x.compare!
-      end
+      #Benchmark.ips do |x|
+      #  run_tests(json_string, n, x)
+      #  x.compare!
+      #end
 
       puts ''
       puts '## Memory'
@@ -136,6 +136,7 @@ module Bench
         n.times do |y|
           struct = OpenStruct.new(parsed)
           access(struct)
+          hash_access(struct)
         end
       end
 
@@ -143,6 +144,7 @@ module Bench
         n.times do |y|
           o_object = OpenObject.new(parsed)
           access(o_object)
+          hash_access(o_object)
         end
       end
 
@@ -150,22 +152,23 @@ module Bench
         n.times do |y|
           e_object = EnhancedOpenObject.new(parsed)
           access(e_object)
+          hash_access(e_object)
         end
       end
 
-      x.report('PO gets:') do
-        n.times do |y|
-          p_object = PromiseOpenObject.new(parsed)
-          access(p_object)
-        end
-      end
+      #x.report('PO gets:') do
+      #  n.times do |y|
+      #    p_object = PromiseOpenObject.new(parsed)
+      #    access(p_object)
+      #  end
+      #end
 
-      x.report('PB gets:') do
-        n.times do |y|
-          b_object = PromiseOpenObject.new { parsed }
-          access(b_object)
-        end
-      end
+      #x.report('PB gets:') do
+      #  n.times do |y|
+      #    b_object = PromiseOpenObject.new { parsed }
+      #    access(b_object)
+      #  end
+      #end
     end
   end
 end

@@ -4,3 +4,4 @@ gem 'oj'
 gem "benchmark-memory"
 gem "benchmark-ips"
 gem "concurrent-ruby"
+gem 'rspec'

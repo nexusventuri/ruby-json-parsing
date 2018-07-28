@@ -19,6 +19,15 @@ class EnhancedOpenObject
     end
     name
   end
+
+  def []=(key, val)
+    @inner_object[key.to_sym] = val
+  end
+
+  def [](key)
+    @inner_object[key.to_sym]
+  end
+
   private :new_enhanced_open_object_member!
 
   def method_missing(mid, *args) # :nodoc:
@@ -31,6 +40,8 @@ class EnhancedOpenObject
       if @inner_object.key?(mid)
         new_enhanced_open_object_member!(mid) unless frozen?
         @inner_object[mid]
+      else
+        raise NoMethodError
       end
     else
       begin

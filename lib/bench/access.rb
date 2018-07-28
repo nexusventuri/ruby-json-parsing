@@ -1,6 +1,6 @@
 module Bench
   class Access
-    def self.run(json_string, n)
+    def self.run(json_string, n, access_times)
       puts '**************************************************'
       puts '*                   Accessing                    *'
       puts '**************************************************'
@@ -12,88 +12,60 @@ module Bench
       b_object = PromiseOpenObject.new { parsed }
       b_object.wait_for_response
 
-      puts ''
-      puts '## Benchmark'
-      puts ''
-      Benchmark.bm do |x|
-        x.report('Hash gets:') do
-          n.times do |y|
-            hash_access(parsed)
-          end
-        end
+      #puts ''
+      #puts '## Ips'
+      #puts ''
+      #Benchmark.ips do |x|
+      #  x.report('Hash gets:') do
+      #    n.times do |y|
+      #      access_times.times do
+      #        hash_access(parsed)
+      #      end
+      #    end
+      #  end
 
-        x.report('Ostruct gets:') do
-          n.times do |y|
-            access(struct)
-          end
-        end
+      #  x.report('Ostruct gets:') do
+      #    n.times do |y|
+      #      access_times.times do
+      #        access(struct)
+      #        hash_access(struct)
+      #      end
+      #    end
+      #  end
 
-        x.report('OO gets:') do
-          n.times do |y|
-            access(o_object)
-          end
-        end
+      #  x.report('OO gets:') do
+      #    n.times do |y|
+      #      access_times.times do
+      #        access(o_object)
+      #        hash_access(o_object)
+      #      end
+      #    end
+      #  end
 
-        x.report('EO gets:') do
-          n.times do |y|
-            access(e_object)
-          end
-        end
+      #  x.report('EO gets:') do
+      #    n.times do |y|
+      #      access_times.times do
+      #        access(e_object)
+      #        hash_access(e_object)
+      #      end
+      #    end
+      #  end
 
-        x.report('PO gets:') do
-          n.times do |y|
-            access(p_object)
-          end
-        end
+      #  #x.report('PO gets:') do
+      #  #  n.times do |y|
+      #  #    access(p_object)
+      #  #    hash_access(p_object)
+      #  #  end
+      #  #end
 
-        x.report('PB gets:') do
-          n.times do |y|
-            access(b_object)
-          end
-        end
-      end
-
-      puts ''
-      puts '## Ips'
-      puts ''
-      Benchmark.ips do |x|
-        x.report('Hash gets:') do
-          n.times do |y|
-            hash_access(parsed)
-          end
-        end
-
-        x.report('Ostruct gets:') do
-          n.times do |y|
-            access(struct)
-          end
-        end
-
-        x.report('OO gets:') do
-          n.times do |y|
-            access(o_object)
-          end
-        end
-
-        x.report('EO gets:') do
-          n.times do |y|
-            access(e_object)
-          end
-        end
-
-        x.report('PO gets:') do
-          n.times do |y|
-            access(p_object)
-          end
-        end
-
-        x.report('PB gets:') do
-          n.times do |y|
-            access(b_object)
-          end
-        end
-        x.compare!
-      end
+      #  #x.report('PB gets:') do
+      #  #  n.times do |y|
+      #  #    access(b_object)
+      #  #    hash_access(b_object)
+      #  #  end
+      #  #end
+      #  x.compare!
+      #end
 
       puts ''
       puts '## Memory'
@@ -101,39 +73,52 @@ module Bench
       Benchmark.memory do |x|
         x.report('Hash gets:') do
           n.times do |y|
-            hash_access(parsed)
+            access_times.times do
+              hash_access(parsed)
+            end
           end
         end
 
         x.report('Ostruct gets:') do
           n.times do |y|
-            access(struct)
+            access_times.times do
+              access(struct)
+              hash_access(struct)
+            end
           end
         end
 
         x.report('OO gets:') do
           n.times do |y|
-            access(o_object)
+            access_times.times do
+              access(o_object)
+              hash_access(o_object)
+            end
           end
         end
 
         x.report('EO gets:') do
           n.times do |y|
-            access(e_object)
+            access_times.times do
+              access(e_object)
+              hash_access(e_object)
+            end
           end
         end
 
-        x.report('PO gets:') do
-          n.times do |y|
-            access(p_object)
-          end
-        end
+        #x.report('PO gets:') do
+        #  n.times do |y|
+        #    access(p_object)
+        #    hash_access(p_object)
+        #  end
+        #end
 
-        x.report('PB gets:') do
-          n.times do |y|
-            access(b_object)
-          end
-        end
+        #x.report('PB gets:') do
+        #  n.times do |y|
+        #    access(b_object)
+        #    hash_access(b_object)
+        #  end
+        #end
         x.compare!
       end
     end
