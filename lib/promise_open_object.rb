@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class PromiseOpenObject
-  def initialize(data = nil, &block)
+  def initialize(data = nil)
     if data.nil?
-      @promise_response = Concurrent::Promise.execute{ block.call }
+      @promise_response = Concurrent::Promise.execute { yield }
     else
       @inner_object = process_values(data)
     end
@@ -11,7 +13,7 @@ class PromiseOpenObject
     name = name.to_sym
     unless singleton_class.method_defined?(name)
       define_singleton_method(name) { @inner_object[name] }
-      define_singleton_method("#{name}=") {|x| @inner_object[name] = x}
+      define_singleton_method("#{name}=") { |x| @inner_object[name] = x }
     end
     name
   end
@@ -42,12 +44,20 @@ class PromiseOpenObject
     super || promise_inner_object.respond_to?(method, include_private)
   end
 
-  def as_json(options=nil)
+  def as_json(options = nil)
     promise_inner_object.send(:table).as_json(options)
   end
 
   def ==(other)
     promise_inner_object == other.send(:promise_inner_object)
+  end
+
+  def [](key)
+    promise_inner_object[key]
+  end
+
+  def []=(key, value)
+    promise_inner_object[key] = value
   end
 
   def eql?(other)
@@ -67,6 +77,7 @@ class PromiseOpenObject
   end
 
   protected
+
   def promise_inner_object
     @inner_object ||= value_or_raise
   end
